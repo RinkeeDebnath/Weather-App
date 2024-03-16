@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div id="main">
+      <div class="navbar">
+        <h1>Weather Report</h1>
+        <div class="search">
+          <input id="input-text" type="text" placeholder="City" />
+          <button id="search-btn"><i class="ri-search-2-line"></i></button>
+        </div>
+      </div>
+      <div id="cityWeatherDetails">
+        <div class="city-temp-details">
+          <h2>
+            <i class="ri-map-pin-fill"></i><span id="city-name">Panipat</span> : <strong id="tempInC">27° C</strong>
+          </h2>
+          
+          <div class="city-additional-details">
+                    <div class="sunrise">
+                        <p><i class="ri-sun-fill"></i> Sunrise</p>
+                        <strong>Low</strong>
+                    </div>
+                    <div class="sunset">
+                        <p><i class="ri-sun-foggy-fill"></i></i> Sunset</p>
+                        <strong>10° </strong>
+                    </div>
+                    <div class="humidity">
+                        <i class="ri-contrast-drop-fill"></i> Humidity</p>
+                        <strong>36%</strong>
+                    </div>
+                    <div class="wind">
+                        <p><i class="ri-windy-line"></i> Wind</p>
+                        <strong>16 Km/h</strong>
+                    </div>
+                    <div class="pressure">
+                        <p><i class="ri-contract-up-down-fill"></i> Pressure</p>
+                        <strong>1011.5 mb</strong>
+                    </div>
+                    <div class="visibility">
+                        <p><i class="ri-eye-fill"></i> Visibility</p>
+                        <strong>14.48 Km</strong>
+                    </div>
+                </div>
+                </div>
+        
+        <div class="special-info">
+                <span id = "weatherIcon"><i class="ri-sun-line"></i> </span>
+                <p id="weather-desc"></p>
+                <p id="temp-summary"></p>
+            </div>
+
+        <div class="geoLocation">
+                <p>Radar and maps</p>
+                <div id="map"></div>
+                <p id="latLong"></p>
+            </div>
+      </div>
+      <div id="upcoming-forecast">
+        <div id="todays-forecast">
+          <h2>Today's Upcoming Forecast</h2>
+          <div class="forecast-reports">
+          </div>
+        </div>
+        <div id="tomorrows-forecast">
+          <h2>Tomorrow's Forecast</h2>
+          <div class="forecast-reports">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

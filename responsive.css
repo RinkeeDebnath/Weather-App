@@ -1,0 +1,63 @@
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .navbar h1 {
+    width: 100%;
+  }
+  .navbar .search {
+    width: 100%;
+    padding-left: 30px;
+  }
+
+  #cityWeatherDetails {
+    flex-direction: column;
+  }
+  #cityWeatherDetails .city-temp-details {
+    width: 100%;
+  }
+
+  .city-temp-details h2 {
+    padding-top: 20px;
+  }
+
+  #cityWeatherDetails .city-additional-details {
+    gap: 10px;
+    grid-template-columns: repeat(2, 9.8rem);
+  }
+
+  .special-info {
+    width: 100%;
+  }
+
+  .special-info p {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
+  #cityWeatherDetails .geoLocation {
+    width: 100%;
+  }
+
+  #upcoming-forecast {
+    flex-direction: column;
+  }
+  #upcoming-forecast #todays-forecast,
+  #upcoming-forecast #tomorrows-forecast {
+    width: 100%;
+  }
+
+  #todays-forecast .forecast-reports {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  #todays-forecast .report {
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+  }
+
+  #tomorrows-forecast .report .details {
+    font-size: 1rem;
+  }
+}
